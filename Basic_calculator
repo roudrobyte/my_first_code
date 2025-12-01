@@ -1,0 +1,64 @@
+#include<stdio.h>
+
+int main()
+{
+
+    int a;
+    float sum, sub, pro, divi, b, c;
+    printf("Welcome to SIR Calculator \n");
+    
+    printf(" 1.Sum \n 2.Substract \n 3.Product \n 4.Division\n");
+    printf("What you need to do?:");
+    scanf("%d",&a);
+    
+    if(a==1)
+    {
+        printf("Enter two numbers for sum\n");
+        printf("First number:");
+        scanf("%f",&b);
+        printf("Second number:");
+        scanf("%f",&c);
+        sum = b+c;
+        printf("The sum of two numbers is %f",sum);
+    }
+    
+    else if(a==2)
+    {
+        printf("Enter two numbers for substract\n");
+        printf("First number:");
+        scanf("%f",&b);
+        printf("Second number:");
+        scanf("%f",&c);
+        sub = b-c;
+        printf("The substract of two numbers is %f",sub);
+    }
+    
+    else if(a==3)
+    {
+        printf("Enter two numbers for Product\n");
+        printf("First number:");
+        scanf("%f",&b);
+        printf("Second number:");
+        scanf("%f",&c);
+        pro = b*c;
+        printf("The Product of two numbers is %f",pro);
+    }
+    
+    else if(a==4)
+    {
+        printf("Enter two numbers for Division\n");
+        printf("First number:");
+        scanf("%f",&b);
+        printf("Second number:");
+        scanf("%f",&c);
+        divi = b/c;
+        printf("The Division of two numbers is %f",divi);
+    }
+    
+    else 
+    {
+        printf("The programe is invalid.");
+    }
+
+    return 0;
+}
